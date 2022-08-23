@@ -59,8 +59,7 @@
                         <div class="row">
                             <div class="col-lg-10 col-xl-7 mx-auto">
                                 <h3 class="display-4 text-center">Groupomania</h3>
-                                <p class="text-muted mb-4 text-center">Restez connecté à l'entreprise même durant vos
-                                    congés ! </p>
+                                <p class="text-muted mb-4 text-center">Afin de nous connaître et partager, au-delà de l'entreprise ! </p>
                                 <form>
                                     <div class="mb-3">
                                         <input id="inputEmail" type="email" placeholder="Email address" required=""
