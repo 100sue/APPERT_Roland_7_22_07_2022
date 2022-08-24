@@ -6,6 +6,8 @@
 
  Réseau Social Groupomania : projet frontend et backend.
  
+ Projet M.E.V.N (Mango, Express, Vue, Node)
+ 
   ## Objectif : ## 
 
 - Construire un réseau social interne pour les employés de Groupomania.
@@ -17,7 +19,7 @@ Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue pour le 
 
  ## Technologies utilisées : ##
  
-- HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, SQL & MySQL, CRUD Operations, OWASP & RGPD Standards.
+- HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, Mango Db, CRUD Operations, OWASP & RGPD Standards.
 - Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, Password-validator.
 
  <br>
