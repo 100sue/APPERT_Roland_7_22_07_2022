@@ -17,7 +17,8 @@
 - Choisir la fonctionnalité à développer et fournir un MVP pour faciliter les interactions entre collègues dans un cadre plus informel.
 - Développer les parties front-end et back-end de l'application.
 
-Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue pour le frontend.
+
+Ce projet utilisera NodeJs, Express et Mango DB pour le backend, et Vue, bootstrap, Vite pour le frontend. 
 <br>
 
  ## Technologies utilisées : ##
