@@ -1,8 +1,10 @@
-const http = require('http');// Define HTTP server 
+// Define HTTP server 
+// App is defined in app.js and is the express application.
+// Normalize port number to avoid issues. 
 
-const app = require('./app');// App is defined in app.js and is the express application
-
-const normalizePort = val => { // Normalize port number to avoid issues 
+const http = require('http');
+const app = require('./app');
+const normalizePort = val => { 
   const port = parseInt(val, 10);
 
   if (isNaN(port)) {
@@ -13,7 +15,10 @@ const normalizePort = val => { // Normalize port number to avoid issues
   }
   return false;
 };
-const port = normalizePort(process.env.PORT || '3000'); // Define the server to listen on the port 8080 and the errorHandler to handle the errors
+
+// Define the server to listen on the port 8080 and the errorHandler to handle the errors
+
+const port = normalizePort(process.env.PORT || '5173'); 
 app.set('port', port);
 
 const errorHandler = error => {
@@ -36,7 +41,9 @@ const errorHandler = error => {
   }
 };
 
-const server = http.createServer(app);// Server is the HTTP server created with the express application
+// Server is the HTTP server created with the express application :
+
+const server = http.createServer(app);
 
 server.on('error', errorHandler);
 server.on('listening', () => {

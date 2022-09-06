@@ -1,6 +1,6 @@
 <script>
 function logUser(email, password) {
-  const url = 'http://localhost:8080/api/auth/login';
+  const url = 'http://localhost:5173/api/auth/login';
   fetch(url, {
     method: 'POST',
     headers: {

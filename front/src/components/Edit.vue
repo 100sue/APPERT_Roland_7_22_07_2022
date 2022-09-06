@@ -8,7 +8,7 @@ function logout() {                                                       // Log
 }
 function getPostById() {                                                  //Get post by id
     const id = window.location.href.split('/').pop();                     // Get the id from the url
-    const url = 'http://localhost:8080/api/posts/' + id;
+    const url = 'http://localhost:5173/api/posts/' + id;
     fetch(url, {
         method: 'GET',
         headers: {
@@ -42,7 +42,7 @@ location.reload();
     formData.append('title', post.title);
     formData.append('content', post.content);
     const id = window.location.href.split('/').pop();
-    const url = 'http://localhost:8080/api/posts/' + id;
+    const url = 'http://localhost:5173/api/posts/' + id;
     fetch(url, {
         method: 'PUT',
         headers: {

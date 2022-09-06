@@ -4,7 +4,7 @@
  
  function signUser(email, password) {                                              // Signup user
  
-     const url = 'http://localhost:8080/api/auth/signup';
+     const url = 'http://localhost:5173/api/auth/signup';
     
     fetch(url, {
          method: 'POST',

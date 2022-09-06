@@ -19,7 +19,7 @@ function userName() {                                                           
   return name;
 }
 function sendPost(post) {                                                               // Send a post
-  const url = 'http://localhost:8080/api/posts';
+  const url = 'http://localhost:5173/api/posts';
   const formData = new FormData();
   if (post.imageUrl) {
     formData.append('image', post.imageUrl);
@@ -72,7 +72,7 @@ function data() {                                                               
   }
 }
 function getPosts() {                                                                             // Get all posts 
-  const url = 'http://localhost:8080/api/posts';
+  const url = 'http://localhost:5173/api/posts';
   fetch(url, {
     method: 'GET',
     headers: {
@@ -98,7 +98,7 @@ function getPosts() {                                                           
     })
 }
 function deletePost(id) {                                                       // Delete a post if this user is the owner of the post
-  const url = 'http://localhost:8080/api/posts/' + id;
+  const url = 'http://localhost:5173/api/posts/' + id;
   fetch(url, {
     method: 'DELETE',
     headers: {
@@ -125,7 +125,7 @@ function deletePost(id) {                                                       
     })
 }
 function editPost(id) {                                                                               // Edit a post by id 
-  const url = 'http://localhost:8080/api/posts/' + id;
+  const url = 'http://localhost:5173/api/posts/' + id;
   fetch(url, {
     method: 'GET',
     headers: {
@@ -162,7 +162,7 @@ function likePost(id, like, usersLiked) {                                       
   if (like = 1) {
     this.post.likes = this.post.likes + 1;
   }
-  const url = 'http://localhost:8080/api/posts/' + id + "/like";
+  const url = 'http://localhost:5173/api/posts/' + id + "/like";
   fetch(url, {
     method: 'POST',
     headers: {

@@ -15,7 +15,7 @@ exports.createPost = async (req, res, next) => {
     date: req.body.date,
     title: req.body.title,
     content: req.body.content,
-    imageUrl: req.file !== undefined ? `http://localhost:8080/images/${req.file.filename}` : '',
+    imageUrl: req.file !== undefined ? `http://localhost:5173/images/${req.file.filename}` : '',
     likes: 0,
     usersLiked: [],
   })
@@ -41,7 +41,7 @@ exports.modifyPost = (req, res, next) => {
               {
                 title: req.body.title,
                 content: req.body.content,
-                imageUrl: req.file !== undefined ? `http://localhost:8080/images/${req.file.filename}` : '',
+                imageUrl: req.file !== undefined ? `http://localhost:5173/images/${req.file.filename}` : '',
               } : { ...req.body };
 
             Post.findByIdAndUpdate({ _id: req.params.id }, { ...postObject, })
