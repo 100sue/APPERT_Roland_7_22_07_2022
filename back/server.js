@@ -16,9 +16,9 @@ const normalizePort = val => {
   return false;
 };
 
-// Define the server to listen on the port 8080 and the errorHandler to handle the errors
+// Define the server to listen on the port 3000 and the errorHandler to handle the errors
 
-const port = normalizePort(process.env.PORT || '5173'); 
+const port = normalizePort(process.env.PORT || '3000'); 
 app.set('port', port);
 
 const errorHandler = error => {
